@@ -1,1 +1,19 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#excuse {
+    font-size: 50px;
+    border: 10px solid red;
+    padding: 30px;
+    border-radius: 5px;
+    
+}
