@@ -1,13 +1,6 @@
-/* eslint-disable */
-// import "bootstrap";
-// import "./style.css";
-
-// import "./assets/img/rigo-baby.jpg";
-// import "./assets/img/4geeks.ico";
-
 window.onload = function() {
   let excuse = document.getElementById("excuse")
-  excuse.textContent = randomSentence();
+  excuse.textContent = randomExcuseSentence();
 };
 
 let who = ['The dog', 'My grandma', 'The mailman', 'My bird'];
@@ -16,15 +9,15 @@ let what = ['my homework', 'my phone', 'the car'];
 let when = ['before the class', 'when I was sleeping', 'while I was exercising', 'during my lunch', 'while I was praying'];
 
 
-const randomSentence = () => {
-  let whoRandom = who[Math.floor(Math.random() * who.length)];
-  let actionRandom = action[Math.floor(Math.random() * action.length)];
-  let whatRandom = what[Math.floor(Math.random() * what.length)];
-  let whenRandom = when[Math.floor(Math.random() * when.length)];
+const randomExcuseSentence = () => {
+  let whoRandomIndex = who[Math.floor(Math.random() * who.length)];
+  let actionRandomIndex = action[Math.floor(Math.random() * action.length)];
+  let whatRandomIndex = what[Math.floor(Math.random() * what.length)];
+  let whenRandomIndex = when[Math.floor(Math.random() * when.length)];
 
-  return (`${whoRandom} ${actionRandom} ${whatRandom} ${whenRandom}`)
+  return (`${whoRandomIndex} ${actionRandomIndex} ${whatRandomIndex} ${whenRandomIndex}`);
   
-}
+};
 
 
 
